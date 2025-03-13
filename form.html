@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <title>poke-form</title>
+</head>
+<header id="menu-h">
+    <h2><a class="menu-link" class="link" href="index.html">Voltar</a></h2><br>
+</header>
+<body>
+    <div class="header">
+        <h1 class="titulo">Formulario de sugestão</h1>
+        <p class="subtitulo">Preencha o formulario</p>
+    </div>
+    <hr>
+    <form action="index.html" class="form">
+        <div class="radio">
+            <label><strong>Você gostou do jogo?</strong></label><br>
+            <label>
+                <input checked type="radio" name="modulo-1" value="moduloa">Sim
+            </label>
+            <label>
+                <input type="radio" name="modulo-1" value="modulob">Não
+            </label>
+        </div>
+            <div class="radio">
+                <label><strong>Qual dos personagens você mais gostou?</strong></label><br>
+                <label>
+                    <input checked type="radio" name="modulo-2" value="moduloa">Galo Cururu
+                </label>
+                <label>
+                    <input type="radio" name="modulo-2" value="modulob">Papaco
+                </label>
+                <label>
+                    <input type="radio" name="modulo-2" value="modulob">Pirarocu
+                </label>
+                <label>
+                    <input type="radio" name="modulo-2" value="modulob">Ashes
+                </label>
+        </div>
+        <div class="radio">
+            <label><strong>Qual deles você acha que precisa de uma remodelação?</strong></label><br>
+            <label>
+                <input checked type="radio" name="modulo-3" value="moduloa">Galo Cururu
+            </label>
+            <label>
+                <input type="radio" name="modulo-3" value="modulob">Papaco
+            </label>
+            <label>
+                <input type="radio" name="modulo-3" value="modulob">Pirarocu
+            </label>
+            <label>
+                <input type="radio" name="modulo-3" value="modulob">Ashes
+            </label>
+            <label>
+                <input type="radio" name="modulo-3" value="modulob">Nenhum
+            </label>
+        </div>
+        <div class="radio">
+            <label><strong>Oque você mais gostou no jogo?</strong></label><br>
+            <label>
+                <input checked type="radio" name="modulo-4" value="moduloa">Jogabilidade
+            </label>
+            <label>
+                <input type="radio" name="modulo-4" value="modulob">Arte visual
+            </label>
+            <label>
+                <input type="radio" name="modulo-4" value="modulob">Historia
+            </label>
+            <label>
+                <input type="radio" name="modulo-4" value="modulob">Simplisidade
+            </label>
+            <label>
+                <input type="radio" name="modulo-4" value="modulob">Outro
+            </label>
+        </div>
+            
+            <div class="area">
+                <label><strong>Qual sua opinião em geral do jogo?</strong></label><br>
+                <textarea rows="6" cols="60" name="opiniao" id="opiniao" placeholder="Escreva Aqui"></textarea>
+        </div>
+        <div class="area">
+            <label><strong>Deixe uma sugestão de alguma mudança ou adição no jogo</strong></label><br>
+            <textarea rows="6" cols="60" name="opiniao" id="opiniao" placeholder="Escreva Aqui"></textarea>
+    </div>
+    <div class="button-card">
+        <button class="button" type="submit">Enviar</button>
+    </div>
+    </form>
+</body>
+</html>

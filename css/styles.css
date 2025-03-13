@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+:root{
+    --cor1: #363636;
+    --cor2: #5bb5e9;
+    --cor3: #c7bf53;
+    --cor4: #f3fbfc;
+    --fonte1: "Krona One", sans-serif;
+    --fonte2: "Montserrat", sans-serif;
+    --fonte3: "Honk", system-ui;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+    max-width: 100%;
+
+}
+
+body{
+   
+    background-color: var(--cor1);
+    color: var(--cor4);
+    box-sizing: border-box;
+
+}
+
+.menu {
+    align-items: center;
+}
+
+.menu-container {
+    text-align: center;
+}
+
+#menu-h {
+    display: flex;
+    padding: 1rem;
+    background-color: var(--cor2);
+}
+
+.menu-titulo{
+    padding: 1rem;
+    font-size: 3rem;
+    margin: 0.5rem;
+}
+
+.menu-link{
+    text-decoration: none;
+    font-size: 1.5rem;
+    gap: 5rem;
+    color: var(--cor1);
+    margin: 1rem;
+}
+
+
+.mais-link{
+    text-decoration: none;
+    background-color: var(--cor2);
+    font-size: 1.5rem;
+    gap: 5rem;
+    border: solid 3px;
+    border-color: var(--cor2);
+    color: var(--cor4);
+    margin: 1rem;
+    width: 7rem;
+    justify-content: center;
+    border-radius: 3px;
+    padding: 0.3rem;
+}
+
+.link {
+    color: var(--cor2);
+    text-decoration: none;
+}
+
+#AssuntoGreal {
+    padding: 1rem;
+    font-size: 3rem;
+    margin: 0.5rem;
+}
+
+.AssuntoGeral-titulo {
+    padding: 1rem;
+    font-size: 2rem;
+    margin: 0.5rem;
+    color: var(--cor2);
+}
+
+.AssuntoGeral-paragrafo {
+    padding: 1rem;
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    color: var(--cor4);
+}
+
+.AssuntoGeral-subtitulo {
+    padding: 1rem;
+    font-size: 1.6rem;
+    margin: 0.8rem;
+    color: var(--cor2);
+}
+
+.AssuntoGeral-container-img{
+    display: flex;
+    justify-content: space-between;
+}
+
+.AssuntoGeral-imagem{
+    padding: 6rem;
+}
+
+.Sobre-titulo {
+    padding: 1rem;
+    font-size: 2rem;
+    margin: 0.5rem;
+    color: var(--cor2);
+}
+
+.Sobre-paragrafo {
+    padding: 1rem;
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    color: var(--cor4);
+}
+
+.Contato-titulo {
+    padding: 1rem;
+    font-size: 2rem;
+    margin: 0.5rem;
+    color: var(--cor2);
+}
+
+.Contato-lista{
+    padding: 1rem;
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    color: var(--cor4);
+}
+
+.mais{
+    align-items: center;
+    text-align: center;
+}
+
+.mais-container-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.mais-container-cards > div{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.mais-titulo{
+    padding: 1rem;
+    font-size: 3rem;
+    margin: 0.5rem;
+}
+
+.poke-container{
+    margin: 2rem;
+    border: solid 2px;
+    border-color: var(--cor4);
+    max-width: 40%;
+}
+.poke-container p{
+    margin-bottom: 2rem;
+}
+
+.rodape {
+    color:var(--cor1);
+    background-color: var(--cor2);
+    padding: 18px;
+    text-align: center;
+    font-family: var(--fonte2);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.menu-link:hover {
+    color: var(--cor4);
+    transition: all 150ms ease-in-out;
+}
+
+.mais-link:hover {
+    background-color: var(--cor1);
+    color: var(--cor2);
+    box-shadow: 0 0 3px 3px var(--cor2);
+    transition: all 150ms ease-in-out;
+}
+
+@media (max-width: 1480px) {
+
+    .AssuntoGeral-container-img{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 540px) {
+
+*{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#menu-h{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+    .AssuntoGeral-container-img{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .menu-link{
+        margin: 0.5rem;
+    }
+
+    .mais-container-cards > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .poke-container{
+        max-width: 80%;
+    }
+
+    .mais-titulo{
+        font-size: 2rem;
+    }
+
+
+    
+}

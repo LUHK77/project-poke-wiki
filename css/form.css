@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+:root{
+    --cor1: #363636;
+    --cor2: #5bb5e9;
+    --cor3: #c7bf53;
+    --cor4: #f3fbfc;
+    --fonte1: "Krona One", sans-serif;
+    --fonte2: "Montserrat", sans-serif;
+    --fonte3: "Honk", system-ui;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+header{
+    margin-bottom: 1rem;
+}
+
+body{
+    background-color: var(--cor1);
+}
+
+#menu-h {
+    display: flex;
+    padding: 1rem;
+    background-color: var(--cor2);
+}
+
+.menu-link{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--cor1);
+    background-color: var(--cor2);
+}
+
+.menu-link:hover {
+    color: var(--cor4);
+    transition: all 150ms ease-in-out;
+}
+
+.header{
+    text-align: center;
+    color: var(--cor2);
+    margin-bottom: 2rem;
+}
+
+.subtitulo{
+    font-size: 1.5rem;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+hr{
+    margin: 2rem;
+}
+
+.radio{
+    color:  var(--cor4);
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    font-size: 1.3rem;
+
+}
+
+.radio strong{
+    color: var(--cor2);
+}
+
+.area{
+    color:  var(--cor4);
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    font-size: 1.3rem; 
+    background-color: var(--cor1);
+}
+
+.area strong{
+    color: var(--cor2);
+    ;
+}
+
+.area ::placeholder, :read-write{
+    color: var(--cor4);
+    font-size: 1.1rem;
+    background-color: var(--cor1);
+}
+
+.button{
+    background-color: var(--cor2);
+    color: var(--cor4);
+    font-size: 1.5rem;
+    gap: 20px;
+    padding: 1rem;
+    padding-inline: 5rem;
+    margin-bottom: 20px;    
+    border-color: var(--cor2);
+}
+
+.button:hover{
+    background-color: var(--cor1);
+    color: var(--cor2);
+    box-shadow: 0 0 4px 4px var(--cor2);
+    transition: all 150ms ease-in-out;
+}
+
+@media (max-width: 540px) {
+    .form{
+        max-width: 540px;
+    }
+
+    .radio{
+        max-width: 80%;
+    }
+
+    .area {
+        max-width: 80%;
+    }
+
+    #menu-h{
+        justify-content: center;
+        display: flex;
+        width: 100%;
+    }
+}
